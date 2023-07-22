@@ -18,7 +18,6 @@ tmp = *x;
  * bubble_sort - Arranging a collection of integers in ascending order.
  * @array: a collection is array integers to sort.
  * @size: The size array's dimensions.
- * 
  * Description: the array is printed after each swap.
  */
 void bubble_sort(int *array, size_t size)

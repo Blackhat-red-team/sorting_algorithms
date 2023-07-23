@@ -61,13 +61,12 @@ return (abbve);
 
 
 /**
- * hoare_sort - Implement the quicksort algorithm through recursion.
- * @array: An array of integers to sort.
- * @size: The size of the array.
- * @left: The starting index of the array partition to order.
- * @right: The ending index of the array partition to order.
- *
- * Description: Uses the Hoare partition scheme.
+ * hoare_sort - Recursion is used to implement the quicksort algorithm.
+ * @array: Sorting an array of numbers.
+ * @size: The array's dimensions.
+ * @left: The array partition order's initial index.
+ * @right: The array partition's final index in sequence.
+ * Description: utilises the Hoare partitioning method.
  */
 void hoare_sort(int *array,
 size_t size,

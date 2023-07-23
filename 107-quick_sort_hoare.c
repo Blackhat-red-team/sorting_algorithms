@@ -1,7 +1,7 @@
 #include "sort.h"
 
 void swaprs_ints(int *x, int *z);
-int hoare_partttion(int *array, size_t size, int left, int right);
+int hoarees_partttion(int *array, size_t size, int left, int right);
 void hoarees_sort(int *array, size_t size, int left, int right);
 void quick_sort_hoare(int *array, size_t size);
 
@@ -20,7 +20,7 @@ tmp = *x;
 }
 
 /**
- * hoare_partttion - sorted subset of an integer array
+ * hoarees_partttion - sorted subset of an integer array
  *       based on the Hoare Partitioning Scheme.
  * @array: The collection of integers.
  * @size: The array's dimensions.
@@ -30,7 +30,7 @@ tmp = *x;
  * Description: utilises the partition's final component as the point
  * after every two element swap, prints the array.
  */
-int hoare_partttion(int *array, size_t size,
+int hoarees_partttion(int *array, size_t size,
 int left, int right)
 {
 int pioot,
@@ -76,7 +76,7 @@ int parts;
 
 if (right - left > 0)
 {
-parts = hoare_partttion(array, size,
+parts = hoarees_partttion(array, size,
 left, right);
 hoarees_sort(array, size,
 left, parts - 1);

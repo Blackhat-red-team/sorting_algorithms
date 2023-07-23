@@ -2,7 +2,7 @@
 
 void swaprs_ints(int *x, int *z);
 int hoare_partttion(int *array, size_t size, int left, int right);
-void hoare_sort(int *array, size_t size, int left, int right);
+void hoarees_sort(int *array, size_t size, int left, int right);
 void quick_sort_hoare(int *array, size_t size);
 
 /**
@@ -61,14 +61,14 @@ return (abbve);
 
 
 /**
- * hoare_sort - Recursion is used to implement the quicksort algorithm.
+ * hoarees_sort - Recursion is used to implement the quicksort algorithm.
  * @array: Sorting an array of numbers.
  * @size: The array's dimensions.
  * @left: The array partition order's initial index.
  * @right: The array partition's final index in sequence.
  * Description: utilises the Hoare partitioning method.
  */
-void hoare_sort(int *array,
+void hoarees_sort(int *array,
 size_t size,
 int left, int right)
 {
@@ -78,9 +78,9 @@ if (right - left > 0)
 {
 parts = hoare_partttion(array, size,
 left, right);
-hoare_sort(array, size,
+hoarees_sort(array, size,
 left, parts - 1);
-hoare_sort(array, size,
+hoarees_sort(array, size,
 parts, right);
 }
 }
@@ -99,6 +99,6 @@ if (array == NULL ||
 size < 2)
 return;
 
-hoare_sort(array, size,
+hoarees_sort(array, size,
 0, size - 1);
 }

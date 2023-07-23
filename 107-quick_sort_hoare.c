@@ -1,8 +1,8 @@
 #include "sort.h"
 
 void swaprs_ints(int *x, int *z);
-int hoare_partttion(int *array, size_t size, int left, int right);
-void hoare_sort(int *array, size_t size, int left, int right);
+int hoarees_partttion(int *array, size_t size, int left, int right);
+void hoarees_sort(int *array, size_t size, int left, int right);
 void quick_sort_hoare(int *array, size_t size);
 
 /**
@@ -20,7 +20,7 @@ tmp = *x;
 }
 
 /**
- * hoare_partttion - sorted subset of an integer array
+ * hoarees_partttion - sorted subset of an integer array
  *       based on the Hoare Partitioning Scheme.
  * @array: The collection of integers.
  * @size: The array's dimensions.
@@ -30,7 +30,7 @@ tmp = *x;
  * Description: utilises the partition's final component as the point
  * after every two element swap, prints the array.
  */
-int hoare_partttion(int *array, size_t size,
+int hoarees_partttion(int *array, size_t size,
 int left, int right)
 {
 int pioot,
@@ -61,15 +61,14 @@ return (abbve);
 
 
 /**
- * hoare_sort - Implement the quicksort algorithm through recursion.
- * @array: An array of integers to sort.
- * @size: The size of the array.
- * @left: The starting index of the array partition to order.
- * @right: The ending index of the array partition to order.
- *
- * Description: Uses the Hoare partition scheme.
+ * hoarees_sort - Recursion is used to implement the quicksort algorithm.
+ * @array: Sorting an array of numbers.
+ * @size: The array's dimensions.
+ * @left: The array partition order's initial index.
+ * @right: The array partition's final index in sequence.
+ * Description: utilises the Hoare partitioning method.
  */
-void hoare_sort(int *array,
+void hoarees_sort(int *array,
 size_t size,
 int left, int right)
 {
@@ -77,11 +76,11 @@ int parts;
 
 if (right - left > 0)
 {
-parts = hoare_partttion(array, size,
+parts = hoarees_partttion(array, size,
 left, right);
-hoare_sort(array, size,
+hoarees_sort(array, size,
 left, parts - 1);
-hoare_sort(array, size,
+hoarees_sort(array, size,
 parts, right);
 }
 }
@@ -100,6 +99,6 @@ if (array == NULL ||
 size < 2)
 return;
 
-hoare_sort(array, size,
+hoarees_sort(array, size,
 0, size - 1);
 }

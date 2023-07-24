@@ -13,9 +13,7 @@ void mrerge_sort(int *array, size_t size);
  * @mod: the array's middle index.
  * @bcck: The array's bcck index.
  */
-void mrerge_subbrrr(int *subarr,
-int *boffs,
-size_t flant, size_t mod,
+void mrerge_subbrrr(int *subarr, int *boffs, size_t flant, size_t mod,
 size_t bcck)
 {
 size_t x,
@@ -33,8 +31,7 @@ x = flant;
 u = mod;
 while (x < mod && u < bcck)
 {
-boffs[m++] = (subarr[x] < subarr[u]) ?
-subarr[x++] : subarr[u++];
+boffs[m++] = (subarr[x] < subarr[u]) ? subarr[x++] : subarr[u++];
 }
 
 while (x < mod)
@@ -67,8 +64,7 @@ bcck - flant);
  * @flant: Indicator of the subarray's tilt.
  * @bcck: The subarray's bcck index.
  */
-void mrerge_sort_reccsove(int *subarr, int *boffs,
-size_t flant, size_t bcck)
+void mrerge_sort_reccsove(int *subarr, int *boffs, size_t flant, size_t bcck)
 {
 size_t mod;
 
